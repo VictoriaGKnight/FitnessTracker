@@ -23,8 +23,15 @@ https://fitness-tracker-drab-six.vercel.app/
 - The ability to edit previous workouts that have been logged
 - Possibly the ability to add weight used to each exercise in the Builder page
 
-# Known Issues
+## Known Issues
 - There is currently no images for each exercise
+
+## Screenshots
+![Homepage Screenshot](screenshots/HomePage.png)
+![Explore Screenshot](screenshots/ExplorePage.png)
+![Builder Screenshot](screenshots/BuilderPage.png)
+![Log Screenshot](screenshots/LogPage.png)
+![Progress Screenshot](screenshots/ProgressPage.png)
 
 ## Setup
 ```bash

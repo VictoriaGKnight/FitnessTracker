@@ -67,14 +67,6 @@ export default function Register() {
         </div>
 
         <div>
-          <label className="label">Role</label>
-          <select className="input" value={role} onChange={(e) => setRole(e.target.value)}>
-            <option value="regular">Regular</option>
-            <option value="admin">Admin</option>
-          </select>
-        </div>
-
-        <div>
           <label className="label">Password</label>
           <input className="input" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>

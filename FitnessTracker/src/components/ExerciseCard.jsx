@@ -7,13 +7,17 @@ export default function ExerciseCard({ exercise }) {
   const bodyPart = exercise?.bodyPart || "—";
   const equipment = exercise?.equipment || "—";
   const target = exercise?.target || "—";
-  const gifUrl = exercise?.gifUrl;
+  const gifUrl = exercise?.gifUrl
+  ? exercise.gifUrl.startsWith("http")
+    ? exercise.gifUrl
+    : `https://exercisedb.p.rapidapi.com${exercise.gifUrl}`
+  : null;
 
   return (
     <div className="card exercise-card">
       <div className="exercise-media">
         {gifUrl ? (
-          <img className="exercise-img" src={gifUrl} alt={name} />
+          <img className="exercise-img" src={gifUrl} alt={name} loading="lazy" />
         ) : (
           <div className="exercise-img placeholder" aria-hidden="true" />
         )}

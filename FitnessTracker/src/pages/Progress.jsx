@@ -31,7 +31,6 @@ export default function Progress() {
       <div className="grid grid-3">
         <StatsCard label="Workouts (7 days)" value={workouts7} />
         <StatsCard label="Streak (days)" value={streak} sub="Based on logged dates" />
-        <StatsCard label="Plan Size" value={plan.items.length} sub="Exercises in your plan" />
       </div>
 
       <div className="panel">

@@ -1,30 +1,77 @@
-# FitTrack MVP
+# FitTrack
 
 ## Description
-A React SPA fitness tracker MVP with Explore (ExerciseDB API), Workout Builder (Context), Logging, and Progress stats. Add exercises from the explore page directly to your current workout in the builder page. Edit each exercide in the builder page and then log workout in the Log page. Your current workout plan will automatically populate in the log page once the "Save Log Entry" button is pressed. 
+FitTrack is a fitness tracker single-page application built with React. It allows users to explore exercises, build workouts, save workouts, log completed workouts, and track their progress over time.
 
 ## Purpose
 A simple web application built for new gym goers. Provides the necessary features in order to make a simple workout and keep track of previous workouts. 
 
+## Features
+- Explore exercises using external API data
+- Add exercises to workouts
+- Save workouts to your account
+- Log completed workouts
+- View workout progress
+- User authentication with login and registration
+- Protected routes for authenticated users
+- Responsive design for mobile, tablet, and desktop 
+
 ## Tech
-- React + Vite
-- React Router
-- Context API
-- ExerciseDB (RapidAPI)
-- Vitest + React Testing Library
-- Vercel (deployment) 
+- React
+- Vite
+- React Router DOM
+- React Context API
+- JavaScript
+- CSS
+- Vitest
+- React Testing Library
+- RapidAPI / ExerciseDB API
+
+## Dependencies
+Main dependencies:
+- react
+- react-dom
+- react-router-dom
+
+Development dependencies:
+- vitest
+- jsdom
+- @testing-library/react
+- @testing-library/jest-dom
+- @testing-library/user-event
 
 ## Deployment URL
 https://fitness-tracker-drab-six.vercel.app/
 
+## Authentication
+FitTrack uses a React Context-based authentication system.
+- Users can register and log in
+- Tokens are stored in sessionStorage
+- Logout clears authentication data
+- Protected routes prevent unauthenticated access to certain pages
+
+## Testing
+- Vitest
+- React Testing Library
+- Jest DOM
+
+### Run Test
+npm test
+
+### Current test coverage includes 
+- Authentication context
+- Protected routes
+- Login validation
+- Basic component rendering and interactions
+
 ## Future Features 
-- Pictures for each exercise, made possible by using a different API
-- The ability to add exercise to multiple workouts at a time
-- The ability to edit previous workouts that have been logged
-- Possibly the ability to add weight used to each exercise in the Builder page
+- Add backend database for real user accounts and persistent storage
+- Add advanced workout charts
+- Custom profile settings
+- Expand testing coverage
 
 ## Known Issues
-- There is currently no images for each exercise
+- Exercise images may load inconsistently depending on the API response
 
 ## Screenshots
 ![Homepage Screenshot](screenshots/HomePage.png)

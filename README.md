@@ -28,7 +28,7 @@ https://fitness-tracker-drab-six.vercel.app/
 
 ## Screenshots
 ![Homepage Screenshot](screenshots/HomePage.png)
-![Explore Screenshot](screenshots/Explore Page.png)
+![Explore Screenshot](screenshots/ExplorePageOne.png)
 ![Builder Screenshot](screenshots/BuilderPage.png)
 ![Log Screenshot](screenshots/LogPage.png)
 ![Progress Screenshot](screenshots/ProgressPage.png)
